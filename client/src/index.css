@@ -1,0 +1,265 @@
+body {
+  background-color: #18191a;
+  color: #e4e6eb;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar Styling - Exact match to Laravel layouts/app.blade.php */
+#sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #242526;
+  border-right: 1px solid #3e4042;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.sidebar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #3e4042;
+  color: #ffffff;
+}
+
+.nav-link-custom {
+  color: #b0b3b8;
+  padding: 10px 20px;
+  margin: 4px 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-link-custom i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  background-color: #3a3b3c;
+  color: #ffffff;
+}
+
+.logout-link {
+  color: #ff6b6b;
+}
+
+.logout-link:hover {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+}
+
+/* Main Content */
+#main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #18191a;
+}
+
+.topbar {
+  background-color: #242526;
+  border-bottom: 1px solid #3e4042;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Widgets - Exact match to Laravel dashboard.blade.php */
+.widget {
+  border-radius: 12px;
+  border: none;
+}
+
+.widget-blue { background-color: #3b5998; color: white; }
+.widget-yellow { background-color: #b8860b; color: white; }
+.widget-green { background-color: #2e8b57; color: white; }
+.widget-red { background-color: #8b0000; color: white; }
+
+.widget-dark {
+  background-color: #1c1d1e;
+  border: 1px solid #3e4042;
+  color: white;
+}
+.widget-dark h6 { color: #aeb4c0; }
+
+/* Table custom dark - Exact match to Laravel notices/index.blade.php */
+.table-custom-dark {
+  --bs-table-bg: transparent;
+  --bs-table-color: #d1d5db;
+  --bs-table-border-color: #2d2e30;
+  width: 100%;
+}
+
+.table-custom-dark th {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 2px solid #3e4042;
+  font-weight: 600;
+  padding: 1rem 0.75rem;
+}
+
+.table-custom-dark td {
+  background-color: transparent;
+  border-bottom: 1px solid #2d2e30;
+  padding: 1.15rem 0.75rem;
+  vertical-align: middle;
+}
+
+.table-custom-dark tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.pill-category {
+  background-color: #5bc0de;
+  color: #1c1d1e;
+  border-radius: 50px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-view {
+  background-color: transparent;
+  color: #5bc0de;
+  border: 1px solid #3e4042;
+  border-radius: 4px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background-color: #2d2e30;
+  color: white;
+  border-color: #5bc0de;
+}
+
+/* Filter container */
+.filter-container {
+  border: 1px solid #3e4042;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #1c1d1e;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: #aeb4c0;
+  border: 1px solid #3e4042;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: white;
+  border-color: #555;
+}
+
+.filter-btn.active {
+  color: white;
+  border-color: #555;
+  background-color: #3a3b3c;
+}
+
+/* Tabs container for Admin */
+.tabs-container {
+  border: 1px solid #3e4042;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  background-color: transparent;
+}
+
+.tab-btn {
+  background-color: transparent;
+  color: #b0b3b8;
+  border: 1px solid #3e4042;
+  padding: 0.35rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  color: white;
+  border-color: #555;
+}
+
+.tab-btn.active {
+  color: white;
+  border-color: #555;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active.pending { border-color: #b8860b; color: #b8860b; }
+.tab-btn.active.approved { border-color: #2e8b57; color: #2e8b57; }
+.tab-btn.active.rejected { border-color: #8b0000; color: #8b0000; }
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-content-dark {
+  background-color: #1c1d1e;
+  border: 1px solid #3e4042;
+  border-radius: 10px;
+  color: #e4e6eb;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
