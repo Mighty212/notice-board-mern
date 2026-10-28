@@ -1,6 +1,6 @@
 # College Notice Board Management System (MERN Stack)
 
-A secured, full-stack campus communication platform developed for **B.Tech Semester-5 Advance Web Development (AWD)** at **ITM SLS Baroda University**.
+A secured, full-stack campus communication platform developed for **Advance Web Development (AWD)** 
 
 ---
 
