@@ -29,3 +29,8 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Office temp files
+~$*
+~*.tmp
+*.tmp
